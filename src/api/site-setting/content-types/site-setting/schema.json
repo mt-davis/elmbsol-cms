@@ -27,9 +27,18 @@
       "type": "email",
       "required": true
     },
+    "contactPhone": {
+      "type": "string"
+    },
     "location": {
       "type": "string",
       "required": true
+    },
+    "contactCtaLabel": {
+      "type": "string"
+    },
+    "contactCtaUrl": {
+      "type": "string"
     },
     "privacyUrl": {
       "type": "string"
@@ -38,6 +47,24 @@
       "type": "string"
     },
     "capabilityStatementUrl": {
+      "type": "string"
+    },
+    "primaryNavigation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link-item"
+    },
+    "footerNavigation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link-item"
+    },
+    "legalNavigation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link-item"
+    },
+    "footerCopyright": {
       "type": "string"
     },
     "seo": {

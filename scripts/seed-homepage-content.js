@@ -21,10 +21,29 @@ const siteSettingData = {
   tagline:
     'A boutique consulting partner specializing in healthcare platform modernization—bridging executive strategy with rapid technical execution.',
   contactEmail: 'contracts@elmbsol.com',
+  contactPhone: '203-589-9887',
   location: 'Middletown, Connecticut',
+  contactCtaLabel: 'Contact the Firm',
+  contactCtaUrl: 'mailto:contracts@elmbsol.com',
   privacyUrl: '/privacy',
   termsUrl: '/terms',
   capabilityStatementUrl: '/capability-statement.pdf',
+  primaryNavigation: [
+    { label: 'Services', url: '#services', openInNewTab: false },
+    { label: 'About', url: '#about', openInNewTab: false },
+    { label: 'Approach', url: '#approach', openInNewTab: false },
+    { label: 'Contact', url: '#contact', openInNewTab: false },
+  ],
+  footerNavigation: [
+    { label: 'Services', url: '#services', openInNewTab: false },
+    { label: 'Capability Statement', url: '/capability-statement.pdf', openInNewTab: false },
+    { label: 'Contact', url: '#contact', openInNewTab: false },
+  ],
+  legalNavigation: [
+    { label: 'Privacy', url: '/privacy', openInNewTab: false },
+    { label: 'Terms', url: '/terms', openInNewTab: false },
+  ],
+  footerCopyright: 'Elm Business Solutions LLC. All rights reserved.',
   seo: {
     metaTitle: 'Healthcare & Cloud Modernization Partner | Elm Business Solutions',
     metaDescription:
@@ -169,8 +188,10 @@ const services = [
     slug: 'healthcare-platform-modernization',
     summary:
       'Modernize enrollment, eligibility, and consumer-facing platforms with a practical roadmap that balances speed, compliance, and long-term scalability.',
-    description:
+    description: [
       'Modernize enrollment, eligibility, and consumer-facing platforms with a practical roadmap that balances speed, compliance, and long-term scalability.',
+      'We help teams clarify target-state architecture, sequence delivery milestones, and reduce execution risk across modernization initiatives in healthcare and regulated environments.',
+    ].join('\n\n'),
     sortOrder: 1,
     featured: true,
   },
@@ -179,8 +200,10 @@ const services = [
     slug: 'aws-architecture-cloud-strategy',
     summary:
       'Design secure, scalable, serverless-first solutions for healthcare and regulated environments, with clear architecture and cost-conscious implementation.',
-    description:
+    description: [
       'Design secure, scalable, serverless-first solutions for healthcare and regulated environments, with clear architecture and cost-conscious implementation.',
+      'Our work spans reference architecture, workload decomposition, integration design, and delivery-ready technical guidance that helps teams move with confidence.',
+    ].join('\n\n'),
     sortOrder: 2,
     featured: true,
   },
@@ -189,8 +212,10 @@ const services = [
     slug: 'data-pipelines-analytics',
     summary:
       'Build reliable data pipelines, dashboards, and decision-ready reporting that improve visibility, reduce operational friction, and support better business outcomes.',
-    description:
+    description: [
       'Build reliable data pipelines, dashboards, and decision-ready reporting that improve visibility, reduce operational friction, and support better business outcomes.',
+      'We focus on trustworthy data flow, reporting clarity, and analytics foundations that support operational performance and executive decision-making.',
+    ].join('\n\n'),
     sortOrder: 3,
     featured: true,
   },
@@ -199,8 +224,10 @@ const services = [
     slug: 'advisory-delivery-oversight',
     summary:
       'Strengthen execution through vendor governance, outcome-based delivery, technical leadership, and documentation that keeps initiatives aligned and moving.',
-    description:
+    description: [
       'Strengthen execution through vendor governance, outcome-based delivery, technical leadership, and documentation that keeps initiatives aligned and moving.',
+      'This support is designed for transformation efforts that need senior guidance, clearer decision-making, and steady momentum across stakeholders and delivery teams.',
+    ].join('\n\n'),
     sortOrder: 4,
     featured: true,
   },
