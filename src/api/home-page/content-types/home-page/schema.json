@@ -41,7 +41,25 @@
     "focusBody": {
       "type": "text"
     },
+    "focusBestFitLabel": {
+      "type": "string"
+    },
+    "focusBestFitValue": {
+      "type": "string"
+    },
     "bestFitSummary": {
+      "type": "text"
+    },
+    "servicesHeading": {
+      "type": "string"
+    },
+    "servicesBody": {
+      "type": "text"
+    },
+    "partnerTypesHeading": {
+      "type": "string"
+    },
+    "partnerTypesBody": {
       "type": "text"
     },
     "aboutHeading": {
@@ -50,10 +68,16 @@
     "aboutBody": {
       "type": "richtext"
     },
+    "approachHeading": {
+      "type": "string"
+    },
     "contactHeading": {
       "type": "string"
     },
     "contactBody": {
+      "type": "text"
+    },
+    "contactDisclaimer": {
       "type": "text"
     },
     "capabilityStatementHeading": {
@@ -62,10 +86,18 @@
     "capabilityStatementBody": {
       "type": "text"
     },
+    "capabilityCtaLabel": {
+      "type": "string"
+    },
     "heroMetrics": {
       "type": "component",
       "repeatable": true,
       "component": "shared.metric"
+    },
+    "focusOutcomes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bullet-item"
     },
     "valueProps": {
       "type": "component",
@@ -76,6 +108,11 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.bullet-item"
+    },
+    "capabilityHighlights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature-item"
     }
   }
 }

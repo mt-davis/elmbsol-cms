@@ -6,6 +6,8 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Middlewar
   const allowedOrigins = env.array('CORS_ORIGINS', [
     'http://localhost:3000',
     'http://localhost:1337',
+    'https://elmbsol.com',
+    'https://www.elmbsol.com',
     'https://elmbsol.vercel.app',
   ]);
 

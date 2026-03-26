@@ -513,17 +513,27 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   attributes: {
     aboutBody: Schema.Attribute.RichText;
     aboutHeading: Schema.Attribute.String;
+    approachHeading: Schema.Attribute.String;
     bestFitSummary: Schema.Attribute.Text;
+    capabilityCtaLabel: Schema.Attribute.String;
+    capabilityHighlights: Schema.Attribute.Component<
+      'shared.feature-item',
+      true
+    >;
     capabilityStatementBody: Schema.Attribute.Text;
     capabilityStatementHeading: Schema.Attribute.String;
     contactBody: Schema.Attribute.Text;
+    contactDisclaimer: Schema.Attribute.Text;
     contactHeading: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     eyebrow: Schema.Attribute.String & Schema.Attribute.Required;
+    focusBestFitLabel: Schema.Attribute.String;
+    focusBestFitValue: Schema.Attribute.String;
     focusBody: Schema.Attribute.Text;
     focusHeading: Schema.Attribute.String;
+    focusOutcomes: Schema.Attribute.Component<'shared.bullet-item', true>;
     heroMetrics: Schema.Attribute.Component<'shared.metric', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -531,11 +541,15 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       'api::home-page.home-page'
     > &
       Schema.Attribute.Private;
+    partnerTypesBody: Schema.Attribute.Text;
+    partnerTypesHeading: Schema.Attribute.String;
     primaryCtaLabel: Schema.Attribute.String;
     primaryCtaUrl: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     secondaryCtaLabel: Schema.Attribute.String;
     secondaryCtaUrl: Schema.Attribute.String;
+    servicesBody: Schema.Attribute.Text;
+    servicesHeading: Schema.Attribute.String;
     subtitle: Schema.Attribute.Text & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
