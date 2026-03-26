@@ -548,6 +548,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     secondaryCtaLabel: Schema.Attribute.String;
     secondaryCtaUrl: Schema.Attribute.String;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     servicesBody: Schema.Attribute.Text;
     servicesHeading: Schema.Attribute.String;
     subtitle: Schema.Attribute.Text & Schema.Attribute.Required;
@@ -652,6 +653,7 @@ export interface ApiSiteSettingSiteSetting extends Struct.SingleTypeSchema {
     location: Schema.Attribute.String & Schema.Attribute.Required;
     privacyUrl: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     seoDescription: Schema.Attribute.Text;
     seoTitle: Schema.Attribute.String;
     siteName: Schema.Attribute.String & Schema.Attribute.Required;

@@ -36,12 +36,35 @@ export interface SharedMetric extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSeo extends Struct.ComponentSchema {
+  collectionName: 'components_shared_seos';
+  info: {
+    description: 'Reusable SEO metadata fields for pages and global defaults';
+    displayName: 'SEO';
+  };
+  attributes: {
+    canonicalUrl: Schema.Attribute.String;
+    keywords: Schema.Attribute.Text;
+    metaDescription: Schema.Attribute.Text;
+    metaRobots: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'index,follow'>;
+    metaTitle: Schema.Attribute.String;
+    ogDescription: Schema.Attribute.Text;
+    ogImageUrl: Schema.Attribute.String;
+    ogTitle: Schema.Attribute.String;
+    twitterDescription: Schema.Attribute.Text;
+    twitterImageUrl: Schema.Attribute.String;
+    twitterTitle: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'shared.bullet-item': SharedBulletItem;
       'shared.feature-item': SharedFeatureItem;
       'shared.metric': SharedMetric;
+      'shared.seo': SharedSeo;
     }
   }
 }

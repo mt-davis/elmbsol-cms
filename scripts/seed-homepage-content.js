@@ -25,6 +25,20 @@ const siteSettingData = {
   privacyUrl: '/privacy',
   termsUrl: '/terms',
   capabilityStatementUrl: '/capability-statement.pdf',
+  seo: {
+    metaTitle: 'Healthcare & Cloud Modernization Partner | Elm Business Solutions',
+    metaDescription:
+      'A boutique consulting partner specializing in healthcare platform modernization—bridging executive strategy with rapid technical execution. AWS architecture, data pipelines, and delivery oversight.',
+    keywords: 'healthcare modernization, AWS architecture, cloud strategy, healthcare consulting, data pipelines',
+    canonicalUrl: 'https://elmbsol.com',
+    metaRobots: 'index,follow',
+    ogTitle: 'Elm Business Solutions | Healthcare & Cloud Modernization',
+    ogDescription:
+      'Boutique consulting for healthcare platform modernization, AWS architecture, and disciplined delivery.',
+    twitterTitle: 'Elm Business Solutions | Healthcare & Cloud Modernization',
+    twitterDescription:
+      'Boutique consulting for healthcare platform modernization, AWS architecture, and disciplined delivery.',
+  },
   seoTitle: 'Healthcare & Cloud Modernization Partner | Elm Business Solutions',
   seoDescription:
     'A boutique consulting partner specializing in healthcare platform modernization—bridging executive strategy with rapid technical execution. AWS architecture, data pipelines, and delivery oversight.',
@@ -39,6 +53,20 @@ const homePageData = {
   primaryCtaUrl: '#contact',
   secondaryCtaLabel: 'View Services',
   secondaryCtaUrl: '#services',
+  seo: {
+    metaTitle: 'Healthcare & Cloud Modernization Partner | Elm Business Solutions',
+    metaDescription:
+      'A boutique consulting partner specializing in healthcare platform modernization—bridging executive strategy with rapid technical execution for organizations, system integrators, and government agencies.',
+    keywords: 'healthcare platform modernization, AWS architecture, advisory, delivery oversight',
+    canonicalUrl: 'https://elmbsol.com',
+    metaRobots: 'index,follow',
+    ogTitle: 'Elm Business Solutions | Healthcare Platform Modernization',
+    ogDescription:
+      'Healthcare platform modernization strategy, AWS architecture, data pipelines, and disciplined execution support.',
+    twitterTitle: 'Elm Business Solutions | Healthcare Platform Modernization',
+    twitterDescription:
+      'Healthcare platform modernization strategy, AWS architecture, data pipelines, and disciplined execution support.',
+  },
   focusHeading: 'Focused support where execution matters most',
   focusBestFitLabel: 'Best fit:',
   focusBestFitValue: 'Prime and enterprise teams',
