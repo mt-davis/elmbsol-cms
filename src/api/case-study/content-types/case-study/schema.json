@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies",
+  "info": {
+    "singularName": "case-study",
+    "pluralName": "case-studies",
+    "displayName": "Case Study",
+    "description": "Featured customer or program transformation stories"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "summary": {
+      "type": "text"
+    },
+    "challenge": {
+      "type": "richtext",
+      "required": true
+    },
+    "approach": {
+      "type": "richtext",
+      "required": true
+    },
+    "outcome": {
+      "type": "richtext",
+      "required": true
+    },
+    "industry": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": "Homepage marketing content for Elm Business Solutions"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "primaryCtaLabel": {
+      "type": "string"
+    },
+    "primaryCtaUrl": {
+      "type": "string"
+    },
+    "secondaryCtaLabel": {
+      "type": "string"
+    },
+    "secondaryCtaUrl": {
+      "type": "string"
+    },
+    "focusHeading": {
+      "type": "string"
+    },
+    "focusBody": {
+      "type": "text"
+    },
+    "bestFitSummary": {
+      "type": "text"
+    },
+    "aboutHeading": {
+      "type": "string"
+    },
+    "aboutBody": {
+      "type": "richtext"
+    },
+    "contactHeading": {
+      "type": "string"
+    },
+    "contactBody": {
+      "type": "text"
+    },
+    "capabilityStatementHeading": {
+      "type": "string"
+    },
+    "capabilityStatementBody": {
+      "type": "text"
+    },
+    "heroMetrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.metric"
+    },
+    "valueProps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature-item"
+    },
+    "whyClientsBringUsIn": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bullet-item"
+    }
+  }
+}

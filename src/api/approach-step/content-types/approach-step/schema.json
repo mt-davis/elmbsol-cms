@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "approach_steps",
+  "info": {
+    "singularName": "approach-step",
+    "pluralName": "approach-steps",
+    "displayName": "Approach Step",
+    "description": "Define, design, and deliver steps from the homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "stepNumber": {
+      "type": "integer",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "sortOrder": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

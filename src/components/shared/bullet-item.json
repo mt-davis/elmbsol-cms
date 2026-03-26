@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_bullet_items",
+  "info": {
+    "displayName": "Bullet Item",
+    "description": "Simple reusable bullet point"
+  },
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
